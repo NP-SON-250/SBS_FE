@@ -32,7 +32,6 @@ const LoginRegister = () => {
 
   const closeModal = () => {
     setIsOpen(false);
-    window.location.reload();
   };
 
   if (!isOpen) return null;

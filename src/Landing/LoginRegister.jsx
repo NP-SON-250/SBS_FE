@@ -155,7 +155,7 @@ const LoginRegister = () => {
                   placeholder="Search category for your business"
                 />
               </div>
-              <div className="lg:flex flex-col gap-5">
+              <div className="flex lg:flex-row flex-col gap-5">
               <div className="mb-1 relative">
                 <label className="block text-gray-700 lg:text-sm text-xl font-bold mb-1" htmlFor="password">
                   Password

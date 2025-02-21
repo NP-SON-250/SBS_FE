@@ -23,7 +23,7 @@ const LandingTopbar = ({ currentSection}) => {
       <div className="hidden lg:flex items-center justify-between">
         <div className="flex gap-20">
             <div className='-mt-5'>
-            <Link to={`/`}>
+            <Link to={`/`} >
             <Logo />
           </Link>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiSearch, FiBell, FiUser } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Logo from "./Logo";
+import LogedLogo from "./LogedLogo";
 
 // Function to determine the greeting based on the current time
 const getGreeting = () => {
@@ -58,7 +58,7 @@ const TopBar = ({ currentSection, role = "managers" }) => {
       {/* Mobile devices */}
       <div className="flex items-center justify-between -mt-2 px-5 lg:hidden">
         <Link to={`/${role}/dashboard`}>
-          <Logo />
+          <LogedLogo />
         </Link>
 
         <div className="text-lg font-bold text-gray-700">{currentSection}</div>

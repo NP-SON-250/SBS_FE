@@ -11,7 +11,7 @@ import { GiExpense } from "react-icons/gi";
 import { FaRegFolderOpen } from "react-icons/fa";
 import { MdMoreHoriz } from "react-icons/md";
 import { FcSalesPerformance } from "react-icons/fc";
-import Logo from './Logo';
+import LogedLogo from './LogedLogo';
 
 const SideBar = ({ role = "managers", onSignOut }) => {
   const location = useLocation();
@@ -62,7 +62,7 @@ const SideBar = ({ role = "managers", onSignOut }) => {
       <div className="w-52 bg-white h-screen px-4 overflow-y-auto shadow fixed top-0 left-0 md:block hidden z-[999]">
         <div className="flex justify-center items-center py-1">
           <Link to={`/${role}/dashboard`}>
-            <Logo />
+            <LogedLogo />
           </Link>
         </div>
 

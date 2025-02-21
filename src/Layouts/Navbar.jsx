@@ -31,7 +31,6 @@ const Navbar = () => {
      ${i === active && "bg-dark_primary text-white"} `}
           >
             <div className="flex">
-            <div className="mt-1 pr-2">
             {createElement(item.icon)}
             </div>
             <div>

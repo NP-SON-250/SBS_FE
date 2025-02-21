@@ -62,7 +62,7 @@ const Slider = () => {
             </h1>
             <p className="text-gray text-lg md:text-3xl lg:px-2 px-10 font-bold py-6">{slide.para}</p>
             <button
-              className=" fixed top-80 w-[200px] bg-tblue hover:bg-white hover:text-tblue text-white lg:text-base text-xl font-bold py-3 rounded-full shadow-slate-900 shadow-md transition-all z-50"
+              className=" absolute top-96 w-[200px] bg-tblue hover:bg-white hover:text-tblue text-white lg:text-base text-xl font-bold py-3 rounded-full shadow-slate-900 shadow-md transition-all z-50"
               onClick={handleGetStartedClick}
             >
               {slide.button}

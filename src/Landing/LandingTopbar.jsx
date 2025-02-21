@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FiSearch, FiBell, FiUser } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Logo from '../ReUsables/Logo';
+import LoginRegister from './LoginRegister';
 // Function to determine the greeting based on the current time
 const getGreeting = () => {
   const now = new Date();
@@ -11,6 +12,11 @@ const getGreeting = () => {
 
 const LandingTopbar = ({ currentSection}) => {
   const greeting = getGreeting(); 
+  const [showForm, setShowForm] = useState(false);
+
+    const handleGetStartedClick = () => {
+      setShowForm(true);
+    };
   return (
     <div className="fixed top-0 right-0 w-full h-16 bg-white p-4 shadow z-[999]">
       {/* Large devices */}
@@ -37,7 +43,7 @@ const LandingTopbar = ({ currentSection}) => {
 
         <div className="flex items-center gap-20 px-10 mt-2 absolute right-0">
         <Link to={'/landing/notifications'}><FiBell className="text-tblue w-6 h-6 hover:text-black cursor-pointer" /></Link>
-          <FiUser className="text-tblue w-6 h-6 hover:text-black cursor-pointer" />
+          <FiUser className="text-tblue w-6 h-6 hover:text-black cursor-pointer" onClick={handleGetStartedClick}/>
         </div>
       </div>
 
@@ -49,7 +55,9 @@ const LandingTopbar = ({ currentSection}) => {
 
         <div className="text-lg font-bold text-gray-700">{currentSection}</div>
         <Link to={'/landing/notifications'}><FiBell className="text-tblue w-6 h-6 hover:text-black cursor-pointer" /></Link>
+        <FiUser className="text-tblue w-6 h-6 hover:text-black cursor-pointer" onClick={handleGetStartedClick}/>
       </div>
+      {showForm && <LoginRegister />}
     </div>
   );
 };

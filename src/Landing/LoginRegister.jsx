@@ -194,7 +194,7 @@ const LoginRegister = () => {
                   />
                   <PaperClipIcon className="lg:w-6 lg:h-6 w-6 h-6 text-tblue mr-2" />
                   {selectedImage ? (
-                    <img src={selectedImage} alt="Profile" className="lg:w-6 lg:h-6 w-10 h-12 rounded-full object-cover ml-2" />
+                    <img src={selectedImage} alt="Profile" className="lg:w-6 lg:h-6 w-12 h-12 rounded-full object-cover ml-2" />
                   ) : (
                     <span className="text-pcolor lg:text-sm lg:mt-3 mt-1 text-xl font-bold">Choose..</span>
                   )}

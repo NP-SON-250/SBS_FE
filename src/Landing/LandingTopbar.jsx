@@ -55,7 +55,7 @@ const LandingTopbar = ({ currentSection}) => {
 
         <div className="text-lg font-bold text-gray-700">{currentSection}</div>
         <Link to={'/landing/notifications'}><FiBell className="text-tblue w-6 h-6 hover:text-black cursor-pointer" /></Link>
-        <FiUser className="text-tblue w-6 h-6 hover:text-black cursor-pointer" onClick={handleGetStartedClick}/>
+        <FiUser className="text-tblue w-6 h-6 hover:text-black cursor-pointer -mr-5" onClick={handleGetStartedClick}/>
       </div>
       {showForm && <LoginRegister />}
     </div>

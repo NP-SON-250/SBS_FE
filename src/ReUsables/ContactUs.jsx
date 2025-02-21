@@ -5,7 +5,7 @@ const ContactUs = ({id}) => {
     <div className="flex flex-col md:flex-row max-w-6xl mx-auto px-0">
       {/* Left Side - Map */}
       <div className="md:w-1/2 lg:px-10 rounded">
-        <h2 className="text-3xl font-semibold text-gray-400 mb-4 text-center">Find Us Here</h2>
+        <h2 className=" subtitle mb-4 text-center">Find Us Here</h2>
         {/* Google Maps iframe */}
         <div className="h-72 bg-gray rounded-2xl space-y-1"
         data-aos="fade-up"

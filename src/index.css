@@ -30,13 +30,13 @@
     @apply font-Poppins lg:text-6xl text-3xl font-extrabold;
   }
   h2 {
-    @apply font-Inria text-5xl font-bold;
+    @apply font-Paprika md:text-xs text-xs font-bold;
   }
   h3 {
     @apply font-Paprika text-5xl;
   }
   h4 {
-    @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;
+    @apply md:text-xl text-lg !leading-relaxed font-Paprika;
   }
   h6 {
     @apply font-Paprika font-bold text-[#253D57] leading-8;

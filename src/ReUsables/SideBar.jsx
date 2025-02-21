@@ -83,10 +83,10 @@ const SideBar = ({ role = "managers", onSignOut }) => {
           ))}
 
           {/* Sign-out button */}
-          <li className="absolute bottom-2 w-[175px]">
+          <li className="absolute bottom-0 w-[175px]">
             <button
               onClick={onSignOut}
-              className="flex items-center p-3 rounded-2xl text-lg font-medium text-red-600 border border-red-600 w-full"
+              className="flex items-center p-3 mt-10 rounded-2xl text-lg font-medium text-red-600 w-full"
             >
               <RiLogoutCircleRLine size={24} className="mr-3" />
               Sign Out

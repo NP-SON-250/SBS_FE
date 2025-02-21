@@ -30,7 +30,7 @@ const TopBar = ({ currentSection, role = "managers" }) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 w-full lg:w-[calc(100%-210px)] h-16 p-4 ${bgColor}`}
+      className={`fixed top-0 right-0 w-full lg:w-[calc(100%-210px)] h-16 p-4 shadow bg-white`}
       style={{ zIndex: 999 }}
     >
       {/* Large devices */}

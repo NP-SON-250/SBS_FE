@@ -9,6 +9,7 @@ const Logo = () => {
             <p className="text-blue-500 text-base">lema</p>
         </div>
     </div>
+    //Done
   )
 }
 
